@@ -34,6 +34,26 @@ Most people can see about 30-60 fps.
 
 ![image](./assests//codecAndContainer.avif)
 
+### why we need codec ?
+---
+
+Let's assume , we are producing a video resolution of `(1080 x 1920)` (height x width) and it consumes `3 bytes per pixel` to store or encode.And that video runs at very low fps such `24fps` and it is `30 minutes long`.
+
+Lets do the calculation,
+
+```py
+total_pixel_per_frame = 1080 * 1920
+cost_per_pixel = 3 // bytes
+time_in_seconds = 30 * 60
+fps = 24
+
+reuired storage = total_pixel_per_frame * cost_per_pixel * time_in_seconds * fps;
+```
+so `required_storage = 268738560000` bytes
+which is equivalent to `268.73 gigabytes` 😵‍💫
+
+`This is enoromous.But with proper codec we can shrink it to much smaller size`
+ 
 ### Common Codecs and supported containers
 
 | Codec name (short) | Full codec name               | Container support    |
