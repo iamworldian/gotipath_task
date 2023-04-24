@@ -18,3 +18,7 @@ extension for hls is `.m3u8`.
 ```
 ./out.o video.mp4 out.m3u8 100 480 640 200000
 ```
+
+## video 
+
+https://github.com/iamworldian/gotipath_task/blob/main/video.mp4
